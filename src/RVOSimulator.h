@@ -146,6 +146,13 @@ namespace RVO {
 		size_t addAgent(const Vector2 &position);
 
 		/**
+		 * \brief      Delete an agent from the simulation.
+		 * \param      agentNo         Index of the agent
+		 * \return     None
+		 */
+		void deleteAgent(size_t agentNo);
+
+		/**
 		 * \brief      Adds a new agent to the simulation.
 		 * \param      position        The two-dimensional starting position of
 		 *                             this agent.

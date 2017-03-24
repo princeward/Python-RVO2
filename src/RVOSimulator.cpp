@@ -121,6 +121,11 @@ namespace RVO {
 		return agents_.size() - 1;
 	}
 
+	void RVOSimulator::deleteAgent(size_t agentNo)
+	{
+		agents_.erase(agents_.begin() + agentNo);
+	}
+
 	size_t RVOSimulator::addObstacle(const std::vector<Vector2> &vertices)
 	{
 		if (vertices.size() < 2) {
